@@ -1,0 +1,247 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/IRANSansWeb_Bold.7626d015e158.eot");
+    src: url("../fonts/IRANSansWeb_Bold.7626d015e158.eot?#iefix") format('embedded-opentype'), /* IE6-8 */ url("../fonts/IRANSansWeb_Bold.6ec03a37e370.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/IRANSansWeb_Bold.a762a767a345.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/IRANSansWeb_Bold.4ff441e3b8c5.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/IRANSansWeb_Medium.1121c0520a30.eot");
+    src: url("../fonts/IRANSansWeb_Medium.1121c0520a30.eot?#iefix") format('embedded-opentype'), /* IE6-8 */ url("../fonts/IRANSansWeb_Medium.bb6a9fe5edb6.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/IRANSansWeb_Medium.74e2ab212452.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/IRANSansWeb_Medium.7a75459b25fc.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/IRANSansWeb_Light.60f95f28d846.eot");
+    src: url("../fonts/IRANSansWeb_Light.60f95f28d846.eot?#iefix") format('embedded-opentype'), /* IE6-8 */ url("../fonts/IRANSansWeb_Light.414e7148a634.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/IRANSansWeb_Light.469a8f6aa5b4.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/IRANSansWeb_Light.53a90b39dae0.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/IRANSansWeb_UltraLight.b8efb89efe7d.eot");
+    src: url("../fonts/IRANSansWeb_UltraLight.b8efb89efe7d.eot?#iefix") format('embedded-opentype'), /* IE6-8 */ url("../fonts/IRANSansWeb_UltraLight.5010d0152420.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/IRANSansWeb_UltraLight.153b7b5a1579.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/IRANSansWeb_UltraLight.eeb1edcad9b2.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/IRANSansWeb.e43cfbc1a67d.eot");
+    src: url("../fonts/IRANSansWeb.e43cfbc1a67d.eot?#iefix") format('embedded-opentype'), /* IE6-8 */ url("../fonts/IRANSansWeb.c6f46673e244.woff2") format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/IRANSansWeb.df14582918ca.woff") format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/IRANSansWeb.ac22d187130d.ttf") format('truetype');
+}
+
+* {
+    font-family: IRANSans, Helvetica, sans-serif, Georgia, "Times New Roman", Times, serif !important
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    margin-top: 0;
+}
+
+.page-header-bar {
+    height: 120px;
+    background: #181633;
+    border-bottom: 1px solid #aaa;
+}
+
+.page-footer {
+    margin-top: 30px;
+    background-color: #0c5460;
+    height: 70px;
+}
+
+div.page-content {
+    margin-top: 8px;
+    background-color: white;
+}
+
+.right-col {
+    /*display: inline;*/
+    float: right;
+    min-height: 1000px;
+    width: calc(75% - 7px);
+    margin-left: 7px;
+    background-color: #f5f5f5;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.left-col {
+    background-color: #f5f5f5;
+    /*display: inline;*/
+    min-height: 300px;
+    float: left;
+    width: calc(25% - 7px);
+    margin-right: 7px;
+    text-align: right;
+    /*border: 1px solid #ccc;*/
+}
+
+.news-img {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline;
+
+}
+
+.news-container {
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ddd;
+    margin: 15px;
+    min-height: inherit;
+}
+
+.news-header {
+    height: 250px;
+}
+
+.news-info {
+    font-size: 11px;
+    color: #777;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.news-title {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.news-abstract {
+    margin-right: 10px;
+}
+
+.news-page--separator {
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #888;
+}
+
+.news-info-item {
+    margin-left: 10px;
+}
+
+.news-detail {
+    text-align: right;
+}
+
+.news-img-inline {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /*margin-right: 50px;*/
+}
+
+.news-img-inline img {
+    width: 500px;
+    height: 300px;
+}
+
+.news-detail ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-detail li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding: 1px 4px 4px;
+    margin: 2px;
+    border-radius: 2px;
+    background-color: #eee;
+    border: 0 !important;
+    border-right: 2px solid #aaa !important;
+    font-size: 11px !important;
+    color: #333 !important;
+    line-height: 18px;
+}
+
+.news-detail ul li a {
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.recommended-news-header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.recommended-news li {
+    margin-bottom: 10px;
+}
+
+.source a{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.comments {
+    clear: both;
+    background-color: #ccc;
+    width: calc(75% - 7px);
+    margin-left: 7px;
+}
+
+.comments-header {
+    margin-top: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.comments-container {
+    margin-right: 5px;
+    min-height: 100px;
+    padding: 5px;
+
+}
+
+.comment {
+    border-radius: 10px ;
+    background-color: white;
+    margin: 10px;
+    font-size:11px;
+}
+
+.user-comment-img {
+    width: 45px;
+    height: 45px;
+}
+
+.comment-text {
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+}

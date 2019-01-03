@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <link rel="stylesheet" href="../static/css/league.css">
+    <meta charset="UTF-8">
+    <title>League</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="page-header-bar">
+    </div>
+</header>
+
+<div class="page-content">
+    <div class="container">
+        <div class="right-col">
+
+            <div class="league-table">
+            <span class="form-group sort-type" style="float: right">
+                <select onchange="sortTable(this.value)" class="form-control form-control-sm">
+                    <option value="9">امتیاز</option>
+                    <option value="1">نام</option>
+                </select>
+            </span>
+                <div class="league-table-name">جام خلیج فارس</div>
+                <table id="score-league-table" class="table table-striped">
+                    <thead>
+                    <tr style="font-size: 15px">
+                        <td style="padding: 0 2px 0 0">رده</td>
+                        <td>تیم</td>
+                        <td>بازی</td>
+                        <td>برد</td>
+                        <td>مساوی</td>
+                        <td>باخت</td>
+                        <td>گل زده</td>
+                        <td>گل خورده</td>
+                        <td>تفاضل گل</td>
+                        <td>امتیاز</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="">
+                        <td class="t001" height="15">1</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">پدیده</a></td>
+                        <td class="t201">15</td>
+                        <td class="t301">9</td>
+                        <td class="t401">4</td>
+                        <td class="t501">2</td>
+                        <td class="t601">19</td>
+                        <td class="t701">8</td>
+                        <td class="t801">11</td>
+                        <td class="t901">
+                            31
+                        </td>
+                    </tr>
+                    <tr class="alternative">
+                        <td class="t001" height="15">2</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">سپاهان</a></td>
+                        <td class="t201">14</td>
+                        <td class="t301">8</td>
+                        <td class="t401">6</td>
+                        <td class="t501">0</td>
+                        <td class="t601">27</td>
+                        <td class="t701">11</td>
+                        <td class="t801">16</td>
+                        <td class="t901">
+                            30
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="t001" height="15">3</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">پرسپولیس</a></td>
+                        <td class="t201">14</td>
+                        <td class="t301">7</td>
+                        <td class="t401">7</td>
+                        <td class="t501">0</td>
+                        <td class="t601">14</td>
+                        <td class="t701">5</td>
+                        <td class="t801">9</td>
+                        <td class="t901">
+                            28
+                        </td>
+                    </tr>
+                    <tr class="alternative">
+                        <td class="t001" height="15">4</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">تراکتور سازی</a></td>
+                        <td class="t201">14</td>
+                        <td class="t301">7</td>
+                        <td class="t401">5</td>
+                        <td class="t501">2</td>
+                        <td class="t601">22</td>
+                        <td class="t701">12</td>
+                        <td class="t801">10</td>
+                        <td class="t901">
+                            26
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="t001" height="15">5</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">استقلال</a></td>
+                        <td class="t201">15</td>
+                        <td class="t301">6</td>
+                        <td class="t401">7</td>
+                        <td class="t501">2</td>
+                        <td class="t601">18</td>
+                        <td class="t701">6</td>
+                        <td class="t801">12</td>
+                        <td class="t901">
+                            25
+                        </td>
+                    </tr>
+                    <tr class="alternative">
+                        <td class="t001" height="15">6</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">پارس جنوبی جم</a></td>
+                        <td class="t201">14</td>
+                        <td class="t301">5</td>
+                        <td class="t401">4</td>
+                        <td class="t501">5</td>
+                        <td class="t601">16</td>
+                        <td class="t701">12</td>
+                        <td class="t801">4</td>
+                        <td class="t901">
+                            19
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="t001" height="15">7</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">سایپا</a></td>
+                        <td class="t201">14</td>
+                        <td class="t301">4</td>
+                        <td class="t401">5</td>
+                        <td class="t501">5</td>
+                        <td class="t601">12</td>
+                        <td class="t701">15</td>
+                        <td class="t801">-3</td>
+                        <td class="t901">
+                            17
+                        </td>
+                    </tr>
+                    <tr class="alternative">
+                        <td class="t001" height="15">8</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">پیکان</a></td>
+                        <td class="t201">15</td>
+                        <td class="t301">4</td>
+                        <td class="t401">4</td>
+                        <td class="t501">7</td>
+                        <td class="t601">15</td>
+                        <td class="t701">16</td>
+                        <td class="t801">-1</td>
+                        <td class="t901">
+                            16
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="t001" height="15">9</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">نساجی مازندران</a></td>
+                        <td class="t201">15</td>
+                        <td class="t301">3</td>
+                        <td class="t401">7</td>
+                        <td class="t501">5</td>
+                        <td class="t601">14</td>
+                        <td class="t701">17</td>
+                        <td class="t801">-3</td>
+                        <td class="t901">
+                            16
+                        </td>
+                    </tr>
+                    <tr class="alternative">
+                        <td class="t001" height="15">10</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">نفت مسجد سلیمان</a></td>
+                        <td class="t201">15</td>
+                        <td class="t301">3</td>
+                        <td class="t401">6</td>
+                        <td class="t501">6</td>
+                        <td class="t601">8</td>
+                        <td class="t701">13</td>
+                        <td class="t801">-5</td>
+                        <td class="t901">
+                            15
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="t001" height="15">11</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">فولاد</a></td>
+                        <td class="t201">14</td>
+                        <td class="t301">3</td>
+                        <td class="t401">6</td>
+                        <td class="t501">5</td>
+                        <td class="t601">11</td>
+                        <td class="t701">17</td>
+                        <td class="t801">-6</td>
+                        <td class="t901">
+                            15
+                        </td>
+                    </tr>
+                    <tr class="alternative">
+                        <td class="t001" height="15">12</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">ماشین سازی تبریز</a></td>
+                        <td class="t201">15</td>
+                        <td class="t301">1</td>
+                        <td class="t401">11</td>
+                        <td class="t501">3</td>
+                        <td class="t601">12</td>
+                        <td class="t701">14</td>
+                        <td class="t801">-2</td>
+                        <td class="t901">
+                            14
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="t001" height="15">13</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">ذوب آهن</a></td>
+                        <td class="t201">15</td>
+                        <td class="t301">2</td>
+                        <td class="t401">7</td>
+                        <td class="t501">6</td>
+                        <td class="t601">12</td>
+                        <td class="t701">18</td>
+                        <td class="t801">-6</td>
+                        <td class="t901">
+                            13
+                        </td>
+                    </tr>
+                    <tr class="alternative">
+                        <td class="t001" height="15">14</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">صنعت نفت آبادان</a></td>
+                        <td class="t201">14</td>
+                        <td class="t301">1</td>
+                        <td class="t401">10</td>
+                        <td class="t501">3</td>
+                        <td class="t601">12</td>
+                        <td class="t701">18</td>
+                        <td class="t801">-6</td>
+                        <td class="t901">
+                            13
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="t001" height="15">15</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">سپید رود رشت</a></td>
+                        <td class="t201">15</td>
+                        <td class="t301">2</td>
+                        <td class="t401">4</td>
+                        <td class="t501">9</td>
+                        <td class="t601">7</td>
+                        <td class="t701">26</td>
+                        <td class="t801">-19</td>
+                        <td class="t901">
+                            10
+                        </td>
+                    </tr>
+                    <tr class="alternative">
+                        <td class="t001" height="15">16</td>
+                        <td class="t101"><a href="javascript:gotoTeamPage();">استقلال خوزستان</a></td>
+                        <td class="t201">14</td>
+                        <td class="t301">2</td>
+                        <td class="t401">5</td>
+                        <td class="t501">7</td>
+                        <td class="t601">9</td>
+                        <td class="t701">20</td>
+                        <td class="t801">-11</td>
+                        <td class="t901">
+                            5
+                        </td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+            <div>
+
+                <div class="league-game">
+                    <span class="form-group sort-type" style="float: right">
+                        <select class="form-control form-control-sm">
+                            <option value="1">هفته اول</option>
+                            <option value="2">هفته دوم</option>
+                            <option value="3">هفته سوم</option>
+                            <option value="4">هفته چهارم</option>
+                            <option value="5">هفته پنجم</option>
+                            <option value="6">هفته ششم</option>
+                        </select>
+                    </span>
+                    <div class="game-result">نتایج بازی‌ها</div>
+                    <table id="game-league-table" class="table table-striped">
+
+                        <tbody>
+                        <tr>
+                            <td>پدیده</td>
+                            <td>۳ - ۱</td>
+                            <td>سپاهان</td>
+                        </tr>
+
+                        <tr>
+                            <td>پرسپولیس</td>
+                            <td>۳ - ۱</td>
+                            <td>تراکتورسازی</td>
+                        </tr>
+                        <tr>
+                            <td>استقلال</td>
+                            <td>۳ - ۱</td>
+                            <td>پیکان</td>
+                        </tr>
+
+                        <tr>
+                            <td>سایپا</td>
+                            <td>۳ - ۱</td>
+                            <td>نفت مسجد سلیمان</td>
+                        </tr>
+
+                        <tr>
+                            <td>سپید رود رشت</td>
+                            <td>۳ - ۱</td>
+                            <td>نساجی مازندران</td>
+                        </tr>
+
+                        <tr>
+                            <td>ذوب آهن</td>
+                            <td>۳ - ۱</td>
+                            <td>استقلال خوزستان</td>
+                        </tr>
+
+                        <tr>
+                            <td>فولاد</td>
+                            <td>۳ - ۱</td>
+                            <td>صنعت نفت آبادان</td>
+                        </tr>
+
+                        <tr>
+                            <td>ماشین سازی تبریز</td>
+                            <td>۳ - ۱</td>
+                            <td>پارس جنوبی جم</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="goal-man">
+                    <div class="goal-man-title">
+                        جدول آقای گل
+                    </div>
+
+                    <table id="goal-man-table" class="table table-striped">
+                        <thead>
+                        <tr>
+                            <td>نام بازیکن</td>
+                            <td>تیم</td>
+                            <td>گل زده</td>
+                        </tr>
+
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>علی علیپور</td>
+                            <td>پرسپولیس</td>
+                            <td>۳۰</td>
+                        </tr>
+
+                        <tr>
+                            <td>گادوین منشا</td>
+                            <td>پرسپولیس</td>
+                            <td>۲۳</td>
+                        </tr>
+
+                        <tr>
+                            <td>علی کریمی</td>
+                            <td>استقلال</td>
+                            <td>۲۰</td>
+                        </tr>
+
+                        <tr>
+                            <td>مهدی رجب زاده</td>
+                            <td>ذوب آهن</td>
+                            <td>۱۴</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="left-col">
+            <div class="tab-list tabs-two-item">
+                <ul class="nav nav-pills news-pills">
+                    <li class="active"><a data-toggle="pill" href="#football-tab">فوتبال</a></li>
+                    <li><a data-toggle="pill" href="#basketball-tab">بسکتبال</a></li>
+                </ul>
+            </div>
+
+            <div class="tab-content">
+                <div id="football-tab" class="tab-pane fade in active archive-container">
+                    <div class="archive-title">آرشیو لیگ‌های فوتبال</div>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۷-۹۸</a>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۶-۹۷</a>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۵-۹۶</a>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۴-۹۵</a>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۳-۹۴</a>
+                </div>
+                <div id="basketball-tab" class="tab-pane fade archive-container">
+                    <div class="archive-title">آرشیو لیگ‌های بسکتبال</div>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۷-۹۸</a>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۶-۹۷</a>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۵-۹۶</a>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۴-۹۵</a>
+                    <a href="http://google.cpm" target="_blank">لیگ برتر ۹۳-۹۴</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer"></footer>
+
+<script>
+    function sortTable(n) {
+        var persian_alphabet = ["آ", "ا", "ب", "پ", "ت", "ث", "ج", "چ", "ح", "خ", "د", "ذ", "ر", "ز", "ژ", "س", "ش", "ص", "ض", "ط", "ظ", "ع", "غ", "ف", "ق", "ک", "گ", "ل", "م", "ن", "و", "ه", "ی"];
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("score-league-table");
+        switching = true;
+        //Set the sorting direction to ascending:
+        dir = "asc";
+        /*Make a loop that will continue until
+         no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+            /*Loop through all table rows (except the
+             first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1); i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                 one from current row and one from the next:*/
+                if (n == 1) {
+                    x = rows[i].getElementsByTagName("TD")[n].textContent[0];
+                    y = rows[i + 1].getElementsByTagName("TD")[n].textContent[0];
+                    x_ = persian_alphabet.indexOf(x);
+                    y_ = persian_alphabet.indexOf(y);
+                } else {
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+                    x_ = -x.innerHTML;
+                    y_ = -y.innerHTML;
+                }
+                /*check if the two rows should switch place,
+                 based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                    if (x_ > y_) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x_ < y_) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                 and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount++;
+            } else {
+                /*If no switching has been done AND the direction is "asc",
+                 set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+
+    function gotoTeamPage() {
+        window.open("http://google.com");
+    }
+</script>
+
+</body>
+</html>

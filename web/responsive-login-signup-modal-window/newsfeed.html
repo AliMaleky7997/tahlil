@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <link rel="stylesheet" href="css/newsfeed.css">
+    <meta charset="UTF-8">
+    <title>جدید‌ترین آگهی‌ها</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<header>
+    <div class="page-header-bar">
+    </div>
+</header>
+
+
+<div class="page-content">
+    <div class="center-container container">
+
+        <div class="right-col">
+            <div class="news-col">
+                <div class="news-header">
+                    <h1>آگهی‌ها</h1>
+                </div>
+                <div class="content-widget">
+
+                    <div class="tab-list tabs-two-item">
+
+                        <ul class="nav nav-pills news-pills">
+                            <li class="active"><a data-toggle="pill" href="#latestNews">آخرین آگهی‌ها</a></li>
+                            <li><a data-toggle="pill" href="#forYouNews">برای شما</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="latestNews" class="tab-pane fade in active news-container">
+                            <div class="news-item">
+                                <img class="news-img" src="img/ad1.png">
+                                <div class="news-title"><a href="">برنامه‌نویس ارشد PHP (وردپرس-آقا)</a></div>
+                                <div class="news-abstract">موقعیت بسیار عالی | پاره‌وقت | تهران
+                                </div>
+                                <span class="date">۱۳ دی ۱۳۹۷</span>
+                                <div class="news-link">
+                                    <a href="./news.html"
+                                       target="_blank">مشاهده آگهی</a>
+                                </div>
+                            </div>
+
+
+                            <div class="news-item">
+                                <img class="news-img" src="img/ad1.png">
+                                <div class="news-title"><a href="">برنامه‌نویس ارشد PHP (وردپرس-آقا)</a></div>
+                                <div class="news-abstract">موقعیت بسیار عالی | پاره‌وقت | تهران
+                                </div>
+                                <span class="date">۱۳ دی ۱۳۹۷</span>
+                                <div class="news-link">
+                                    <a href="./news.html"
+                                       target="_blank">مشاهده آگهی</a>
+                                </div>
+                            </div>
+
+                            <div class="news-item">
+                                <img class="news-img" src="img/ad1.png">
+                                <div class="news-title"><a href="">برنامه‌نویس ارشد PHP (وردپرس-آقا)</a></div>
+                                <div class="news-abstract">موقعیت بسیار عالی | پاره‌وقت | تهران
+                                </div>
+                                <span class="date">۱۳ دی ۱۳۹۷</span>
+                                <div class="news-link">
+                                    <a href="./news.html"
+                                       target="_blank">مشاهده آگهی</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="forYouNews" class="tab-pane fade news-container">
+                            <div class="news-item">
+                                <img class="news-img" src="img/ad1.png">
+                                <div class="news-title"><a href="">برنامه‌نویس ارشد PHP (وردپرس-آقا)</a></div>
+                                <div class="news-abstract">موقعیت بسیار عالی | پاره‌وقت | تهران
+                                </div>
+                                <span class="date">۱۳ دی ۱۳۹۷</span>
+                                <div class="news-link">
+                                    <a href="./news.html"
+                                       target="_blank">مشاهده آگهی</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="left-col">
+            <form style="margin: 10px">
+
+                <label for="search-phrase" class="labels">عبارت جستجو:</label>
+                <input id="search-phrase" class="inputs">
+                <br>
+
+                <label for="city" class="labels">شهر:</label>
+                <input list="city" class="inputs">
+                <datalist id="city">
+                    <option value="تهران">
+                    <option value="اصفهان">
+                </datalist>
+                <br>
+
+                <label for="category" class="labels">دسته‌بندی:</label>
+                <select multiple id="category" class="inputs">
+                    <option value="volvo">برنامه‌نویسی</option>
+                    <option value="saab">نساجی</option>
+                    <option value="opel">مکانیک</option>
+                </select>
+                <br>
+
+                <label for="sabeghe" class="labels">سابقه‌کاری:</label>
+                <select id="sabeghe" class="inputs">
+                    <option value="volvo">۱ ماه</option>
+                    <option value="saab">۲ ماه</option>
+                    <option value="opel">۳ ماه</option>
+                </select>
+                <br>
+
+                <label for="salary" class="labels">حقوق دریافتی:</label>
+                <select id="salary" class="inputs">
+                    <option value="volvo">۱ میلیون</option>
+                    <option value="saab">۲ میلیون</option>
+                    <option value="opel">۳ میلیون</option>
+                </select>
+                <br>
+
+                <button type="submit" value="search" class="inputs">جستجو</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+<footer class="page-footer"></footer>
+
+</body>
+</html>
