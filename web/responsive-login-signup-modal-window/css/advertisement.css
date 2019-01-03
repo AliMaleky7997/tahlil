@@ -81,7 +81,7 @@ div.page-content {
 .left-col {
     background-color: #f5f5f5;
     /*display: inline;*/
-    min-height: 300px;
+    min-height: 100px;
     float: left;
     width: calc(25% - 7px);
     margin-right: 7px;
@@ -89,8 +89,19 @@ div.page-content {
     /*border: 1px solid #ccc;*/
 }
 
+.news-item {
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    width: auto;
+    height: 130px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ddd;
+}
+
 .news-img {
-    width: 300px;
+    width: 200px;
     height: 200px;
     float: left;
     margin-top: 5px;
@@ -98,6 +109,17 @@ div.page-content {
     display: inline;
 
 }
+
+.news-img-recom {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline;
+
+}
+
 
 .news-container {
     border: 1px solid #ccc;
@@ -244,4 +266,8 @@ a {
     font-size: 14px;
     margin-right: 5px;
     margin-left: 5px;
+}
+
+.inputs{
+    margin-bottom: 7px;
 }
